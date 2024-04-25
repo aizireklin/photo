@@ -14,6 +14,8 @@
         <div class="info-panel">
             <div class="top-panel">
                 <p>Координаты: {{ pixelCoords }}</p>
+            <p class="top-panel-text">Изображение ширина : {{ imgWidth }} px</p>
+            <p class="top-panel-text">высота : {{ imgHeight }} px</p>
             </div>
             <div class="bottom-panel">
                 <p>Выбранный пиксель:</p>
@@ -122,6 +124,10 @@ export default {
     background-color: #ffffff;
 }
 
+.top-panel-text {
+
+}
+
 .add-image {
     max-width: 200px;
     padding: 5px;
@@ -182,7 +188,7 @@ button:hover {
     width: 100%;
     height: 20px;
     background-color: #3a3a3a;
-    color: #f0f0f0;
+    color: #000000;
     padding: 10px;
     display: flex;
 }
